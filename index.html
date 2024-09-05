@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies-List</title>
+
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2>Список фильмов</h2>
+        <h2>2024</h2>
+        <h1>Посмотреть</h1>
+    </header>
+
+    <main class="main">
+        <div class="addMovie__container">
+            <input id="inputMovie"
+            class="addMovie__input"
+            type="text"
+            placeholder="Добавить фильм">
+            <button id="addMovieButton" class="addMovie__btn">
+                <img class="btn__image" src="resources/add-btn.png" alt="add-btn">
+            </button>
+        </div>
+        <div class="fixed-box">
+            <ol id="moviesList" class="movies__list"></ol>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
